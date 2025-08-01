@@ -1,9 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var hexColor = "#FFFFFF"
-    @State private var bgColor = Color.white
-
+   @StateObject private var vm=ColorViewModel()
+    
     var body: some View {
         VStack(spacing: 20) {
             Text("Color: \(hexColor)").font(.title)
